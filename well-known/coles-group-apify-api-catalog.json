@@ -1,0 +1,104 @@
+{
+    "linkset": [
+        {
+            "anchor": "https://apify.com/.well-known/api-catalog",
+            "profile": [
+                {
+                    "href": "https://www.rfc-editor.org/info/rfc9727"
+                }
+            ],
+            "item": [
+                {
+                    "href": "https://api.apify.com/v2",
+                    "title": "Apify API v2 — REST API"
+                },
+                {
+                    "href": "https://mcp.apify.com/",
+                    "title": "Apify MCP server — streamable HTTP endpoint"
+                }
+            ]
+        },
+        {
+            "anchor": "https://api.apify.com/v2",
+            "service-desc": [
+                {
+                    "href": "https://apify.com/openapi.json",
+                    "type": "application/json",
+                    "title": "Apify API v2 — OpenAPI specification (this origin)"
+                },
+                {
+                    "href": "https://docs.apify.com/api/openapi.json",
+                    "type": "application/json",
+                    "title": "Apify API v2 — OpenAPI specification (canonical)"
+                },
+                {
+                    "href": "https://api.apify.com/v2/openapi.json",
+                    "type": "application/json",
+                    "title": "Apify API v2 — live OpenAPI endpoint"
+                }
+            ],
+            "service-doc": [
+                {
+                    "href": "https://docs.apify.com/api/v2",
+                    "type": "text/html",
+                    "title": "Apify API v2 — reference documentation"
+                }
+            ],
+            "status": [
+                {
+                    "href": "https://status.apify.com/",
+                    "type": "text/html",
+                    "title": "Apify status — API (api.apify.com)"
+                },
+                {
+                    "href": "https://status.apify.com/api/v2/summary.json",
+                    "type": "application/json",
+                    "title": "Apify status — machine-readable component summary"
+                }
+            ],
+            "terms-of-service": [
+                {
+                    "href": "https://docs.apify.com/legal/general-terms-and-conditions",
+                    "type": "text/html",
+                    "title": "Apify general terms and conditions"
+                }
+            ]
+        },
+        {
+            "anchor": "https://mcp.apify.com/",
+            "service-desc": [
+                {
+                    "href": "https://mcp.apify.com/.well-known/mcp/server-card.json",
+                    "type": "application/json",
+                    "title": "Apify MCP server — server card"
+                }
+            ],
+            "service-doc": [
+                {
+                    "href": "https://docs.apify.com/integrations/mcp",
+                    "type": "text/html",
+                    "title": "Apify MCP server — documentation"
+                }
+            ],
+            "status": [
+                {
+                    "href": "https://status.apify.com/",
+                    "type": "text/html",
+                    "title": "Apify status — MCP server (mcp.apify.com)"
+                },
+                {
+                    "href": "https://status.apify.com/api/v2/summary.json",
+                    "type": "application/json",
+                    "title": "Apify status — machine-readable component summary"
+                }
+            ],
+            "terms-of-service": [
+                {
+                    "href": "https://docs.apify.com/legal/general-terms-and-conditions",
+                    "type": "text/html",
+                    "title": "Apify general terms and conditions"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.coles.com.au/important-information/privacy-policy
+signals:
+  data_subject_request:
+    url: https://www.coles.com.au/important-information/privacy-policy
+    section: '9. Procedure to access or correct your personal information'
+    rights_named: [access, correction, annotation where correction is refused]
+    stated_sla: 'full response within 30 days (section 10, complaints)'
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://www.coles.com.au/important-information/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You may access or correct any personal information you have provided  to Coles by navigating within your Coles Online Account to “Manage account> Edit Profile”."
+    - source: https://www.coles.com.au/important-information/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Where you request Coles to correct information we hold about you, but Coles elects not to make the requested correction, you may request Coles to add a note to your information outlining your position."
+    - source: https://www.coles.com.au/important-information/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "If you are still not satisfied, you can contact the Office of the Australian Information Commissioner, whose contact details are set out in Section 11."
+    note: >-
+      Access and correction rights under the Australian Privacy Act, self-service via the Coles Online
+      account plus a Privacy Officer contact; refused corrections can be annotated; OAIC is the escalation
+      path. No deletion or portability right is named on the page.
+  data_residency:
+    url: https://www.coles.com.au/important-information/privacy-policy
+    section: '6. Sharing of personal information'
+    evidence:
+    - source: https://www.coles.com.au/important-information/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We use systems, customer service teams, and service providers located within Australia and in overseas locations that include Argentina, Canada, EU Member States, Hong Kong, India, Israel, Japan, New Zealand, Philippines, Singapore, South Africa, United Kingdom, United States, and Vietnam. We may share personal information with third parties in these countries. From time to time, this list of countries may change."
+    note: >-
+      A cross-border disclosure statement listing processing locations, not a residency commitment: the
+      page says data may be processed and shared outside Australia and that the country list may change.
+  ai_transparency:
+    url: https://www.coles.com.au/important-information/privacy-policy
+    section: '7. Use of automated decision making and AI'
+    evidence:
+    - source: https://www.coles.com.au/important-information/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We and our service providers may utilise AI, data analytics and other technologies to facilitate, support and enhance the provision of goods, services and information we provide, and for other lawful purposes including as described in this Privacy Policy. This includes optimising in-store and online shopping, targeted marketing and advertising based on preferences and shopping history, and improving interactions with our Customer Care team."
+    note: >-
+      A general disclosure that AI and automated decision making are used for shopping optimisation,
+      targeted marketing and customer care. It names no specific models, decisions, or opt-out.
+  age_assurance:
+    url: https://www.coles.com.au/important-information/privacy-policy
+    section: site footer
+    evidence:
+    - source: https://www.coles.com.au/important-information/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "No alcohol can be sold or supplied to anyone under 18. It's against the law. It's an offence to supply liquor to a person under the age of 18 years. All liquor products are sold and supplied by Liquorland (Australia) Pty Ltd."
+    note: >-
+      A statutory liquor-sale age notice in the site footer, not a description of an age-verification
+      mechanism; it establishes an under-18 restriction on liquor sales only.
+notes: >-
+  The Coles Group terms page (https://www.colesgroup.com.au/public/?page=terms---conditions, 200) carried
+  no candidate language for any signal. No subprocessor list, retention period, incident-notification,
+  GPC, or accessibility conformance statement was found on the pages read.

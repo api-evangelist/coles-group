@@ -1,0 +1,28 @@
+type: MCPServer
+name: Coles Group MCP server
+generated: '2026-10-21'
+method: none
+status: none
+description: >-
+  Coles Group does not publish an MCP server. A web search on 2026-10-21 turned up
+  no official hosted or stdio server and no public API docs from Coles. No OpenAPI
+  contract is saved in this repo, so we could not derive a candidate tool list.
+  The servers we did find are third-party: a community stdio project
+  (hung-ngm/coles-woolworths-mcp-server) and an Apify scraper actor. Both query
+  Coles' undocumented consumer endpoints, Coles does not endorse them, and neither
+  is recorded as a Coles surface.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+third_party_observed:
+- name: coles-woolworths-mcp-server (community, unofficial)
+  url: https://glama.ai/mcp/servers/@hung-ngm/coles-woolworths-mcp-server/inspect
+  note: Community project with stdio transport. It describes the Coles/Woolworths endpoints it calls as not officially documented.
+- name: Apify Coles Scraper actor (third-party)
+  url: https://apify.com/haketa/coles-scraper.md
+  note: Third-party scraper that offers its own Apify-hosted MCP endpoint. It is not run by Coles.
+source:
+- https://www.colesgroup.com.au/
+- https://www.coles.com.au/

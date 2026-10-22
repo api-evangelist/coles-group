@@ -1,0 +1,8 @@
+{
+    "resource": "https://mcp.apify.com",
+    "resource_name": "Apify MCP",
+    "resource_documentation": "https://docs.apify.com/integrations/mcp",
+    "authorization_servers": ["https://console-backend.apify.com"],
+    "scopes_supported": ["full_api_access"],
+    "bearer_methods_supported": ["header"]
+}

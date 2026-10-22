@@ -1,0 +1,73 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 1
+  other_domain: 4
+  platform: 0
+  roles:
+  - api
+  - legal
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: apify.com
+  found_by:
+  - well-known
+  types: []
+  serves: []
+  platform: github.com
+  registrable_domain: apify.com
+  role: other
+  relation: other-domain
+- host: colescareers.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Careers
+  serves: []
+  registrable_domain: colescareers.com.au
+  role: marketing
+  relation: other-domain
+- host: www.coles.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Shop
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: coles.com.au
+  role: legal
+  relation: other-domain
+- host: www.colesgroup.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Blog
+  - Support
+  - TermsOfService
+  serves: []
+  registrable_domain: colesgroup.com.au
+  role: website
+  relation: own

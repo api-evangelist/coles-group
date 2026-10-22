@@ -1,23 +1,85 @@
 aid: coles-group
+
 name: Coles Group
-description: 'Coles Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Coles Group Limited (ASX: COL) is an Australian retailer that operates the Coles supermarket chain (coles.com.au), online grocery shopping with home delivery or click and collect, and a liquor range. Its corporate site describes it as ''a trusted retailer, delivering quality value and service''. The site covers investor relations, sustainability, supplier resources and news. It was added from the apidays Australia 2026 harvest. No public developer portal, API documentation or GitHub organization was found when this record was checked on 2026-10-21.'
+
 url: https://raw.githubusercontent.com/api-evangelist/coles-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Retail
+- Supermarkets
+- Grocery
+- E-Commerce
+- Australia
+- Liquor
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.coles.com.au/content/dam/coles/global/default-og-image/coles-og-image-1200x627.jpg
+
 common:
+- type: SecurityTxt
+  url: well-known/coles-group-apify-security.txt
+- type: WellKnown
+  url: well-known/coles-group-well-known.yml
+- type: Hosts
+  url: hosts/coles-group-hosts.yml
+- type: IntegrationEdges
+  url: integrations/coles-group-integration-edges.yml
+- type: DomainSecurity
+  url: security/coles-group-domain-security.yml
 - type: Website
-  url: https://coles.com.au/
+  url: https://www.colesgroup.com.au/
+- type: Shop
+  url: https://www.coles.com.au/
+- type: Blog
+  url: https://www.colesgroup.com.au/news/?page=media-releases
+- type: Support
+  url: https://www.colesgroup.com.au/contact-us/?page=contact-us
+- type: TermsOfService
+  url: https://www.colesgroup.com.au/public/?page=terms---conditions
+- type: PrivacyPolicy
+  url: https://www.coles.com.au/important-information/privacy-policy
+- type: Careers
+  url: https://colescareers.com.au/au/en/home
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: The Website was set to the corporate site, which identifies itself as "Coles Group". coles.com.au is kept as the retail Shop pointer. No developer portal, API docs or GitHub org was found.
+  evidence:
+  - url: https://www.colesgroup.com.au/
+    status: 200
+  - url: https://www.coles.com.au/
+    status: 200
+  - url: https://github.com/coles-group
+    status: 404
+  - url: https://github.com/colesgroup
+    status: 404
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 18
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

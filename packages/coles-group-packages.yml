@@ -1,0 +1,7 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://registry.npmjs.org/coles
+- https://pypi.org/pypi/coles/json
+note: 'No first-party SDK, client library or CLI was found. Coles Group publishes no developer portal or API docs, and its GitHub orgs github.com/coles-group and github.com/colesgroup both return 404. registry.npmjs.org/coles returned 404 and pypi.org/pypi/coles/json returned 404 (2026-10-21). Community scrapers exist, such as an unofficial Coles/Woolworths MCP server on Glama, but they are not first-party and are not recorded here.'
+packages: []

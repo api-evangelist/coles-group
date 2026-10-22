@@ -1,0 +1,55 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.colesgroup.com.au/suppliers/?page=transacting-with-coles
+- https://zapier.com/apps/coles-group/integrations
+- https://n8n.io/integrations/coles-group/
+- https://composio.dev/toolkits/coles-group
+- https://monid.ai/tools/coles-group
+checked:
+- https://www.colesgroup.com.au/
+- https://www.colesgroup.com.au/suppliers/
+- https://www.colesgroup.com.au/suppliers/?page=transacting-with-coles
+- https://cin7.partnerpage.io/integrations/coles
+- https://www.spscommerce.com/network/find-a-partner/view/coles-liquor
+- https://home.messagexchange.com/retailers/coles-edi/
+- https://composio.dev/toolkits/coles-group
+- https://monid.ai/tools/coles-group
+- https://n8n.io/integrations/coles-group/
+- https://zapier.com/apps/coles-group/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: SAP Ariba Network
+  partner: ariba
+  type: claimed
+  direction: unknown
+  evidence: https://www.colesgroup.com.au/suppliers/?page=transacting-with-coles
+  use_case: 'GNFR purchase-to-pay. Verbatim: "All GNFR Purchase-to-Pay transactions with Coles are conducted via
+    the Ariba Network."'
+- partner_name: Cin7
+  partner: null
+  type: marketplace
+  marketplace: cin7
+  direction: third-party
+  evidence: https://cin7.partnerpage.io/integrations/coles
+  use_case: EDI trading with Coles (EDIFACT ORDERS, ORDRSP, CONTRL, INVOIC per the listing)
+- partner_name: SPS Commerce
+  partner: sps-commerce
+  type: marketplace
+  marketplace: sps-commerce
+  direction: third-party
+  evidence: https://www.spscommerce.com/network/find-a-partner/view/coles-liquor
+  use_case: Retail EDI network listing for Coles Liquor
+- partner_name: MessageXchange
+  partner: null
+  type: marketplace
+  marketplace: messagexchange
+  direction: third-party
+  evidence: https://home.messagexchange.com/retailers/coles-edi/
+  use_case: Coles EDI and webform service for suppliers (purchase orders, acknowledgements, ASNs, invoices)
+templates: []
+note: Coles Group publishes no developer API, app marketplace or integrations page. The one integration it names
+  itself is supplier procurement over the SAP Ariba Network for goods-not-for-resale (GNFR). Retail (goods-for-resale)
+  supplier trading runs over EDI, but that is described only by third-party EDI vendors. Their listings are recorded
+  as third-party marketplace edges and are not Coles claims.
